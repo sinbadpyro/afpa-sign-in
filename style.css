@@ -51,7 +51,7 @@ a{
     background-color: #f1f1f1;
 }
 .form-box{
- margin-bottom: 70px;
+ margin-bottom: 40px;
 }
 .form-box>.button{
   display: block;
@@ -81,6 +81,35 @@ a{
     color: #ffffff;
 }
 
+/********** Styling the tooltip *********/
+.toolti>p{
+    text-align: center;
+    color: #5a545a;
+    font-style: italic;
+    width: 25px;
+    border-radius: 100%;
+    background-color: #dedede;
+    position: relative;
+    left: 280px;
+    bottom: 197px;
+}
+
+.toolti .tooltiptext {
+    visibility: hidden;
+    width: 20em;
+    background-color: white;
+    color: #e3007e;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    top: 260px;
+    left: 1350px;
+    z-index: 1;
+}
+.toolti:hover .tooltiptext {
+    visibility: visible;
+  }
 .button2{
     display: block;
     width: 70%;
@@ -132,6 +161,9 @@ footer{
     }
 
     footer{
+        display: none;
+    }
+    .toolti{
         display: none;
     }
   }
